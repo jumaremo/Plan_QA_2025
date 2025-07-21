@@ -1,4 +1,4 @@
-/* 🎨 PLAN QA 2025 - ESTILOS MODULARES */
+/* 🎨 PLAN QA 2025 - ESTILOS CON FILTRO DE PRIORIDAD Y CONTROLES MEJORADOS */
 
 * {
     margin: 0;
@@ -90,66 +90,163 @@ body {
     margin: 0 auto;
 }
 
-/* 🔧 CONTROLS */
+/* 🔧 CONTROLES MEJORADOS */
 .controls {
     padding: 30px;
     background: #f8f9fa;
     border-bottom: 1px solid #e9ecef;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 30px;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
-.filter-section {
+.filters-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.filters-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
     display: flex;
-    gap: 20px;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 8px;
 }
 
-.filter-section label {
+.filters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-label {
     font-weight: 600;
     color: #495057;
-    margin-right: 8px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 5px;
 }
 
-.filter-section select {
-    padding: 10px 15px;
+.filter-icon {
+    font-size: 1rem;
+}
+
+.filter-text {
+    flex: 1;
+}
+
+.filter-select {
+    padding: 12px 16px;
     border: 2px solid #dee2e6;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 14px;
     background: white;
     transition: all 0.3s ease;
-    min-width: 150px;
+    width: 100%;
+    cursor: pointer;
 }
 
-.filter-section select:focus {
+.filter-select:focus {
     outline: none;
     border-color: #4facfe;
     box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.1);
+    transform: translateY(-1px);
+}
+
+.filter-select:hover {
+    border-color: #4facfe;
+}
+
+/* 🎯 FILTRO DE PRIORIDAD DESTACADO */
+.priority-filter {
+    position: relative;
+}
+
+.priority-filter::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(135deg, #ff4757, #ff6b7a);
+    border-radius: 12px;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.priority-filter > * {
+    position: relative;
+    z-index: 1;
+}
+
+.priority-select, #priorityFilter {
+    border-color: #ff4757 !important;
+    background: linear-gradient(135deg, rgba(255, 71, 87, 0.05) 0%, white 100%) !important;
+    font-weight: 600;
+}
+
+.priority-select:focus, #priorityFilter:focus {
+    border-color: #ff4757 !important;
+    box-shadow: 0 0 0 3px rgba(255, 71, 87, 0.15) !important;
+}
+
+/* 📊 BOTÓN DE EXPORTAR MEJORADO */
+.export-container {
+    display: flex;
+    align-items: center;
+    min-width: 200px;
 }
 
 .export-btn {
     background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
     color: white;
     border: none;
-    padding: 12px 24px;
-    border-radius: 25px;
+    padding: 15px 25px;
+    border-radius: 12px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
 }
 
 .export-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(17, 153, 142, 0.6);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(17, 153, 142, 0.6);
 }
 
-/* 📈 STATS SECTION */
+.export-btn:active {
+    transform: translateY(-1px);
+}
+
+.export-icon {
+    font-size: 1.1rem;
+}
+
+.export-text {
+    font-weight: 600;
+}
+
+/* 📈 STATS SECTION CON PRIORIDADES */
 .stats-section {
     background: linear-gradient(135deg, #2196f3 0%, #21cbf3 100%);
     color: white;
@@ -182,7 +279,242 @@ body {
     opacity: 0.9;
 }
 
-/* 🛣️ ROADMAP */
+/* 🏆 ESTADÍSTICAS DE PRIORIDAD */
+.priority-stats {
+    background: linear-gradient(135deg, #ff4757 0%, #ff6b7a 100%);
+    color: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.priority-stats h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.priority-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.priority-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.priority-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.priority-count {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.priority-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* 📊 BANNER DE TIEMPO DINÁMICO */
+.time-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    margin: 20px 0;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+}
+
+.time-banner.hidden {
+    display: none;
+}
+
+.time-banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.time-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.time-icon {
+    font-size: 2rem;
+}
+
+.time-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.priority-indicator {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.priority-level {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.time-breakdown {
+    display: grid;
+    grid-template-columns: 2fr auto 2fr auto 2fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.time-section {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.time-section:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.time-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.time-icon-small {
+    font-size: 1.1rem;
+}
+
+.time-value {
+    margin-bottom: 8px;
+}
+
+.time-value .hours {
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+}
+
+.time-value .unit {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.time-value.total .hours {
+    font-size: 2.8rem;
+    color: #ffeb3b;
+}
+
+.time-description {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    line-height: 1.3;
+}
+
+.time-separator {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+/* 📊 COLORES POR SECCIÓN */
+.core-time {
+    border-left: 4px solid #4caf50;
+}
+
+.optional-time {
+    border-left: 4px solid #ff9800;
+}
+
+.total-time {
+    border-left: 4px solid #ffeb3b;
+    background: rgba(255, 235, 59, 0.1);
+}
+
+/* 📈 BARRA DE PROGRESO */
+.time-progress {
+    margin-top: 15px;
+}
+
+.progress-bar {
+    height: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.progress-core {
+    background: linear-gradient(90deg, #4caf50, #66bb6a);
+    transition: width 0.5s ease;
+}
+
+.progress-optional {
+    background: linear-gradient(90deg, #ff9800, #ffb74d);
+    transition: width 0.5s ease;
+}
+
+.progress-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* 🎨 VARIACIONES POR PRIORIDAD */
+.time-banner.priority-fundamentos {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.time-banner.priority-automatización {
+    background: linear-gradient(135deg, #ffc107 0%, #ffca2c 100%);
+    color: #333;
+}
+
+.time-banner.priority-automatización .time-value.total .hours {
+    color: #ff6f00;
+}
+
+.time-banner.priority-especialización {
+    background: linear-gradient(135deg, #dc3545 0%, #e15759 100%);
+}
+
+.time-banner.priority-vanguardia {
+    background: linear-gradient(135deg, #6f42c1 0%, #8e5ec6 100%);
+}
+
+/* 🛣️ ROADMAP ACTUALIZADO */
 .roadmap {
     background: #f8f9fa;
     padding: 40px;
@@ -209,6 +541,23 @@ body {
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-top: 4px solid #4facfe;
+    position: relative;
+}
+
+.roadmap-phase.fundamentos {
+    border-top-color: #28a745;
+}
+
+.roadmap-phase.automatizacion {
+    border-top-color: #ffc107;
+}
+
+.roadmap-phase.especializacion {
+    border-top-color: #dc3545;
+}
+
+.roadmap-phase.vanguardia {
+    border-top-color: #6f42c1;
 }
 
 .phase-number {
@@ -228,12 +577,19 @@ body {
     font-weight: 600;
     color: #2c3e50;
     margin-bottom: 10px;
+    font-size: 1.1rem;
 }
 
 .phase-duration {
     color: #6c757d;
     font-size: 0.9rem;
     margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.phase-duration.reduced {
+    color: #28a745;
+    font-weight: 600;
 }
 
 .phase-components {
@@ -303,7 +659,7 @@ body {
     gap: 25px;
 }
 
-/* 🎴 COURSE CARDS */
+/* 🎴 COURSE CARDS CON PRIORIDADES */
 .course-card {
     background: white;
     border-radius: 15px;
@@ -340,6 +696,29 @@ body {
 .course-card.complementario-habilidades-técnicas { border-left-color: #795548; }
 .course-card.complementario-habilidades-blandas { border-left-color: #795548; }
 .course-card.mandatorios-siesa { border-left-color: #e91e63; }
+.course-card.componentes-de-aplicación { border-left-color: #9c27b0; }
+.course-card.objetivos-qa { border-left-color: #ff9800; }
+
+/* 🏆 ESTILOS DE PRIORIDAD */
+.course-card.priority-fundamentos {
+    background: linear-gradient(135deg, rgba(40, 167, 69, 0.05) 0%, white 100%);
+    border-left-color: #28a745 !important;
+}
+
+.course-card.priority-automatización {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.05) 0%, white 100%);
+    border-left-color: #ffc107 !important;
+}
+
+.course-card.priority-especialización {
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.05) 0%, white 100%);
+    border-left-color: #dc3545 !important;
+}
+
+.course-card.priority-vanguardia {
+    background: linear-gradient(135deg, rgba(111, 66, 193, 0.05) 0%, white 100%);
+    border-left-color: #6f42c1 !important;
+}
 
 .course-header {
     display: flex;
@@ -365,6 +744,37 @@ body {
     font-size: 0.8rem;
     font-weight: 500;
     margin-left: 10px;
+}
+
+/* 🏆 BADGE DE PRIORIDAD */
+.priority-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.priority-badge.priority-fundamentos {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+}
+
+.priority-badge.priority-automatización {
+    background: linear-gradient(135deg, #ffc107 0%, #ffca2c 100%);
+    color: #333;
+}
+
+.priority-badge.priority-especialización {
+    background: linear-gradient(135deg, #dc3545 0%, #e15759 100%);
+    color: white;
+}
+
+.priority-badge.priority-vanguardia {
+    background: linear-gradient(135deg, #6f42c1 0%, #8e5ec6 100%);
+    color: white;
 }
 
 .course-details {
@@ -508,7 +918,65 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-/* 📱 RESPONSIVE */
+/* 📊 MÉTRICAS DESTACADAS */
+.priority-summary {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.priority-summary h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.priority-metrics {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.priority-metric {
+    text-align: center;
+}
+
+.priority-metric .number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+}
+
+.priority-metric .label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+/* 📱 RESPONSIVE PARA CONTROLES Y BANNER DE TIEMPO */
+@media (max-width: 968px) {
+    .time-breakdown {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .time-separator {
+        font-size: 1.5rem;
+        margin: 5px 0;
+    }
+    
+    .time-header {
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .time-title {
+        font-size: 1.4rem;
+    }
+}
+
 @media (max-width: 768px) {
     .header h1 {
         font-size: 2.2rem;
@@ -517,13 +985,64 @@ body {
     .controls {
         flex-direction: column;
         align-items: stretch;
+        gap: 25px;
     }
     
-    .filter-section {
-        justify-content: center;
+    .filters-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .export-container {
+        min-width: auto;
+    }
+    
+    .filters-title {
+        text-align: center;
+        font-size: 1.1rem;
     }
     
     .courses-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .priority-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .roadmap-timeline {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-label {
+        font-size: 0.85rem;
+    }
+    
+    .filter-select {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+    
+    .export-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .time-banner {
+        padding: 20px 15px;
+    }
+    
+    .time-value .hours {
+        font-size: 1.8rem;
+    }
+    
+    .time-value.total .hours {
+        font-size: 2.2rem;
+    }
+    
+    .time-title {
+        font-size: 1.2rem;
     }
 }

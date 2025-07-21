@@ -11,7 +11,7 @@
     <div class="container">
         <div class="header">
             <h1>🚀 Plan de Capacitación QA 2025</h1>
-            <p>Formación Integral para Equipos de Quality Assurance</p>
+            <p>Formación Integral para Equipos de Quality Assurance - Con Filtro de Prioridades</p>
         </div>
 
         <div class="exec-summary">
@@ -19,29 +19,61 @@
             <p>
                 Este plan integral de capacitación está diseñado para desarrollar competencias de vanguardia en Quality Assurance, 
                 combinando fundamentos sólidos con tecnologías emergentes como IA, automatización avanzada y DevSecOps. 
-                Estructurado en 9 componentes clave que abarcan desde QA Manual hasta Transversal IA, 
-                garantizando profesionales preparados para los desafíos actuales y futuros del testing.
+                Estructurado en 11 componentes clave con <strong>4 niveles de prioridad</strong> para optimizar el tiempo de formación de 18 a 12 meses.
             </p>
         </div>
 
-        <div class="controls">
-            <div class="filter-section">
-                <label for="componentFilter">Filtrar por Componente:</label>
-                <select id="componentFilter">
-                    <option value="">Todos los Componentes</option>
-                    <!-- Opciones se generarán dinámicamente -->
-                </select>
-                
-                <label for="sourceFilter">Filtrar por Fuente:</label>
-                <select id="sourceFilter">
-                    <option value="">Todas las Fuentes</option>
+        <!-- 🔧 CONTROLS MEJORADOS -->
+<div class="controls">
+    <div class="filters-container">
+        <h3 class="filters-title">🎯 Filtros de Búsqueda</h3>
+        
+        <div class="filters-grid">
+            <!-- Filtro Principal de Prioridad -->
+            <div class="filter-group priority-filter">
+                <label for="priorityFilter" class="filter-label">
+                    <span class="filter-icon">🎯</span>
+                    <span class="filter-text">Nivel de Prioridad</span>
+                </label>
+                <select id="priorityFilter" class="filter-select priority-select">
+                    <option value="">Todos los Niveles</option>
                     <!-- Opciones se generarán dinámicamente -->
                 </select>
             </div>
-            
-            <button class="export-btn" onclick="window.TrainingPlan.exportToExcel()">
-                📊 Exportar Plan Completo
-            </button>
+
+            <!-- Filtro de Componente -->
+            <div class="filter-group">
+                <label for="componentFilter" class="filter-label">
+                    <span class="filter-icon">📦</span>
+                    <span class="filter-text">Componente</span>
+                </label>
+                <select id="componentFilter" class="filter-select">
+                    <option value="">Todos los Componentes</option>
+                    <!-- Opciones se generarán dinámicamente -->
+                </select>
+            </div>
+
+            <!-- Filtro de Fuente -->
+                    <div class="filter-group">
+                        <label for="sourceFilter" class="filter-label">
+                            <span class="filter-icon">🏢</span>
+                            <span class="filter-text">Fuente</span>
+                        </label>
+                        <select id="sourceFilter" class="filter-select">
+                            <option value="">Todas las Fuentes</option>
+                            <!-- Opciones se generarán dinámicamente -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Botón de Exportar Separado -->
+            <div class="export-container">
+                <button class="export-btn" onclick="window.TrainingPlan.exportToExcel()">
+                    <span class="export-icon">📊</span>
+                    <span class="export-text">Exportar Plan Completo</span>
+                </button>
+            </div>
         </div>
 
         <div class="stats-section">
@@ -61,57 +93,185 @@
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">12</div>
-                    <div class="stat-label">Meses de Duración</div>
+                    <div class="stat-label">Meses Optimizados</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nueva sección de estadísticas de prioridad -->
+        <div class="priority-stats">
+            <h3>🏆 Distribución por Niveles de Prioridad</h3>
+            <div class="priority-grid">
+                <div class="priority-card">
+                    <div class="priority-icon">🏗️</div>
+                    <div class="priority-count" id="priority-fundamentos">0</div>
+                    <div class="priority-label">Fundamentos</div>
+                </div>
+                <div class="priority-card">
+                    <div class="priority-icon">🤖</div>
+                    <div class="priority-count" id="priority-automatización">0</div>
+                    <div class="priority-label">Automatización</div>
+                </div>
+                <div class="priority-card">
+                    <div class="priority-icon">⚡</div>
+                    <div class="priority-count" id="priority-especialización">0</div>
+                    <div class="priority-label">Especialización</div>
+                </div>
+                <div class="priority-card">
+                    <div class="priority-icon">🚀</div>
+                    <div class="priority-count" id="priority-vanguardia">0</div>
+                    <div class="priority-label">Vanguardia</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 📊 BANNER DE TIEMPO DINÁMICO -->
+        <div class="time-banner" id="timeBanner">
+            <div class="time-banner-content">
+                <div class="time-header">
+                    <div class="time-icon">⏱️</div>
+                    <h3 class="time-title">Tiempo de Inversión Sugerido</h3>
+                    <div class="priority-indicator" id="priorityIndicator">
+                        <span class="priority-level">📊 Plan Completo</span>
+                    </div>
+                </div>
+                
+                <div class="time-breakdown">
+                    <!-- Tiempo Mínimo Core -->
+                    <div class="time-section core-time">
+                        <div class="time-label">
+                            <span class="time-icon-small">🎯</span>
+                            <span>Tiempo Mínimo (Core QA)</span>
+                        </div>
+                        <div class="time-value" id="coreTime">
+                            <span class="hours">200</span>
+                            <span class="unit">horas</span>
+                        </div>
+                        <div class="time-description" id="coreDescription">
+                            Todos los componentes principales
+                        </div>
+                    </div>
+
+                    <!-- Separador -->
+                    <div class="time-separator">+</div>
+
+                    <!-- Tiempo Adicional Opcional -->
+                    <div class="time-section optional-time">
+                        <div class="time-label">
+                            <span class="time-icon-small">📚</span>
+                            <span>Tiempo Adicional (Opcional)</span>
+                        </div>
+                        <div class="time-value" id="optionalTime">
+                            <span class="hours">107</span>
+                            <span class="unit">horas</span>
+                        </div>
+                        <div class="time-description" id="optionalDescription">
+                            Todos los complementarios disponibles
+                        </div>
+                    </div>
+
+                    <!-- Separador -->
+                    <div class="time-separator">=</div>
+
+                    <!-- Tiempo Total -->
+                    <div class="time-section total-time">
+                        <div class="time-label">
+                            <span class="time-icon-small">🚀</span>
+                            <span>Tiempo Total</span>
+                        </div>
+                        <div class="time-value total" id="totalTime">
+                            <span class="hours">307</span>
+                            <span class="unit">horas</span>
+                        </div>
+                        <div class="time-description" id="totalDescription">
+                            ~10 meses (30h/mes) • 8-10 meses
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progreso Visual -->
+                <div class="time-progress">
+                    <div class="progress-bar">
+                        <div class="progress-core" id="progressCore" style="width: 65%"></div>
+                        <div class="progress-optional" id="progressOptional" style="width: 35%"></div>
+                    </div>
+                    <div class="progress-labels">
+                        <span class="progress-label core">Core QA</span>
+                        <span class="progress-label optional">Complementario</span>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="roadmap">
-            <h3>🛣️ Roadmap de Implementación</h3>
+            <h3>🛣️ Roadmap de Implementación Optimizado</h3>
             <div class="roadmap-timeline">
-                <div class="roadmap-phase">
+                <div class="roadmap-phase fundamentos">
                     <div class="phase-number">1</div>
-                    <div class="phase-title">Fundamentos (Meses 1-2)</div>
-                    <div class="phase-duration">🕐 Duración: 8 semanas</div>
+                    <div class="phase-title">🏗️ Fundamentos</div>
+                    <div class="phase-duration reduced">🕐 Duración: 3 meses</div>
                     <ul class="phase-components">
-                        <li>Mandatorios Siesa (ADN Siesa)</li>
-                        <li>QA Manual - Fundamentos</li>
-                        <li>Herramientas básicas (Git, VS Code)</li>
-                        <li>Introducción a IA</li>
+                        <li>ADN Siesa (Obligatorio)</li>
+                        <li>QA Manual - Bases sólidas</li>
+                        <li>Herramientas esenciales</li>
+                        <li>IA básica para productividad</li>
                     </ul>
                 </div>
-                <div class="roadmap-phase">
+                <div class="roadmap-phase automatizacion">
                     <div class="phase-number">2</div>
-                    <div class="phase-title">Automatización (Meses 3-5)</div>
-                    <div class="phase-duration">🕐 Duración: 12 semanas</div>
+                    <div class="phase-title">🤖 Automatización</div>
+                    <div class="phase-duration reduced">🕐 Duración: 4 meses</div>
                     <ul class="phase-components">
-                        <li>QA Automatizado (Selenium, Cypress)</li>
+                        <li>Robot Framework - Core</li>
+                        <li>Selenium/Cypress esencial</li>
                         <li>Python para Testing</li>
                         <li>CI/CD básico</li>
-                        <li>Robot Framework</li>
                     </ul>
                 </div>
-                <div class="roadmap-phase">
+                <div class="roadmap-phase especializacion">
                     <div class="phase-number">3</div>
-                    <div class="phase-title">Especialización (Meses 6-8)</div>
-                    <div class="phase-duration">🕐 Duración: 12 semanas</div>
+                    <div class="phase-title">⚡ Especialización</div>
+                    <div class="phase-duration reduced">🕐 Duración: 3 meses</div>
                     <ul class="phase-components">
-                        <li>QA Performante (JMeter, Lighthouse)</li>
-                        <li>QA Segurizado (OWASP, Pentesting)</li>
-                        <li>DevOps avanzado</li>
-                        <li>API Testing</li>
+                        <li>Performance Testing</li>
+                        <li>Security Testing básico</li>
+                        <li>API Testing avanzado</li>
+                        <li>Mobile Testing</li>
                     </ul>
                 </div>
-                <div class="roadmap-phase">
+                <div class="roadmap-phase vanguardia">
                     <div class="phase-number">4</div>
-                    <div class="phase-title">Vanguardia (Meses 9-12)</div>
-                    <div class="phase-duration">🕐 Duración: 16 semanas</div>
+                    <div class="phase-title">🚀 Vanguardia</div>
+                    <div class="phase-duration reduced">🕐 Duración: 2 meses</div>
                     <ul class="phase-components">
-                        <li>IA Avanzada para Testing</li>
-                        <li>Machine Learning en QA</li>
-                        <li>Certificaciones especializadas</li>
-                        <li>Proyectos capstone</li>
+                        <li>IA Avanzada para QA</li>
+                        <li>Machine Learning Testing</li>
+                        <li>DevSecOps Integration</li>
+                        <li>Innovation Projects</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resumen de optimización -->
+        <div class="priority-summary">
+            <h4>📊 Optimización Lograda</h4>
+            <div class="priority-metrics">
+                <div class="priority-metric">
+                    <span class="number">12</span>
+                    <span class="label">meses vs 18</span>
+                </div>
+                <div class="priority-metric">
+                    <span class="number">33%</span>
+                    <span class="label">reducción tiempo</span>
+                </div>
+                <div class="priority-metric">
+                    <span class="number">100%</span>
+                    <span class="label">cobertura esencial</span>
+                </div>
+                <div class="priority-metric">
+                    <span class="number">4</span>
+                    <span class="label">niveles prioridad</span>
                 </div>
             </div>
         </div>
@@ -124,7 +284,7 @@
             <div class="loading-section">
                 <div class="loading-spinner"></div>
                 <h3>Cargando componentes del plan de capacitación...</h3>
-                <p>Inicializando módulos de datos</p>
+                <p>Inicializando módulos de datos con clasificación por prioridad</p>
             </div>
         </div>
     </div>
@@ -132,7 +292,7 @@
     <!-- 🚀 CARGAR SISTEMA MODULAR -->
     <script src="js/core.js"></script>
     
-    <!-- 📦 CARGAR COMPONENTES MODULARES -->
+    <!-- 📦 CARGAR COMPONENTES MODULARES CON PRIORIDADES -->
     <script src="js/components/qa-manual.js"></script>
     <script src="js/components/qa-automatizado.js"></script>
     <script src="js/components/qa-performante.js"></script>
@@ -146,7 +306,23 @@
     <script src="js/components/objetivos-qa.js"></script>
 
     <script>
-        console.log('🎉 Todos los módulos cargados exitosamente');
+        console.log('🎉 Todos los módulos con prioridades cargados exitosamente');
+        
+        // Verificación adicional
+        setTimeout(() => {
+            if (window.TrainingPlan) {
+                console.log('✅ TrainingPlan inicializado correctamente');
+                console.log('📊 Componentes registrados:', window.TrainingPlan.components.size);
+                
+                // Inicializar banner de tiempo
+                if (typeof initializeTimeBanner === 'function') {
+                    initializeTimeBanner();
+                    console.log('⏱️ Banner de tiempo inicializado');
+                }
+            } else {
+                console.error('❌ Error: TrainingPlan no está definido');
+            }
+        }, 2000);
     </script>
 </body>
 </html>
