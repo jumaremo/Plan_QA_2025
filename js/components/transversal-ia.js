@@ -61,8 +61,8 @@ window.TrainingPlan.registerComponent({
                     enlace: "https://www.miuniversidadsiesa.com/cursos/carpetas/20075"
                 },
                 {
-                    nombre: "🥇 GEN AI NIVEL 300 - Avanzado (Próximamente)",
-                    enlace: "Pendiente por programar"
+                    nombre: "🥇 GEN AI NIVEL 300 - Avanzado (En Construcción)",
+                    enlace: "courses/genai-300/index.html"
                 }
             ]
         },
