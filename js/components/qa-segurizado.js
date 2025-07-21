@@ -1,10 +1,7 @@
 /**
- * 📦 COMPONENTE: QA SEGURIZADO - SOLO CURSOS 100% GRATUITOS
+ * 🔐 COMPONENTE: QA SEGURIZADO CON PRIORIDADES
  * Archivo: js/components/qa-segurizado.js
- * 
- * NOTA: Cursos de pago movidos a Complementario Habilidades Técnicas:
- * - SANS: Web Application Security (~$7,000+)
- * - Microsoft: Azure Security Certifications (de pago)
+ * Seguridad QA clasificada por nivel de especialización
  */
 
 window.TrainingPlan.registerComponent({
@@ -12,11 +9,13 @@ window.TrainingPlan.registerComponent({
     icon: "🔐",
     borderColor: "#6610f2",
     courses: [
+        // === ESPECIALIZACIÓN (SEGURIDAD BÁSICA) ===
         {
             fuente: "Cisco",
             curso: "Fase 1 - Ciberseguridad - Cisco",
             acceso: "https://www.netacad.com/es/courses/introduction-to-cybersecurity?courseLang=es-XL",
             tiempo: "76 horas",
+            prioridad: "Especialización", // ⚡ FUNDAMENTOS SECURITY
             expandible: true,
             subcursos: [
                 {
@@ -34,6 +33,7 @@ window.TrainingPlan.registerComponent({
             curso: "OWASP - Programa de Seguridad Completo",
             acceso: "https://owasp.org/www-project-webgoat/",
             tiempo: "33 horas",
+            prioridad: "Especialización", // ⚡ SECURITY TESTING
             expandible: true,
             subcursos: [
                 {
@@ -54,27 +54,33 @@ window.TrainingPlan.registerComponent({
             fuente: "Google Aprendizaje",
             curso: "Google Security Best Practices",
             acceso: "https://developers.google.com/web/fundamentals/security",
-            tiempo: "6 horas"
+            tiempo: "6 horas",
+            prioridad: "Especialización" // ⚡ BEST PRACTICES
         },
         {
             fuente: "NIST",
             curso: "Cybersecurity Framework",
             acceso: "https://www.nist.gov/cyberframework",
-            tiempo: "10 horas"
+            tiempo: "10 horas",
+            prioridad: "Especialización" // ⚡ FRAMEWORK ESTÁNDAR
         },
+
+        // === VANGUARDIA (PENTESTING AVANZADO) ===
         {
             fuente: "PortSwigger",
             curso: "Web Security Academy",
             acceso: "https://portswigger.net/web-security",
-            tiempo: "25 horas"
+            tiempo: "25 horas",
+            prioridad: "Vanguardia" // 🚀 PENTESTING AVANZADO
         },
         {
             fuente: "Mozilla",
             curso: "Web Security Guidelines",
             acceso: "https://infosec.mozilla.org/guidelines/web_security",
-            tiempo: "4 horas"
+            tiempo: "4 horas",
+            prioridad: "Vanguardia" // 🚀 GUIDELINES AVANZADAS
         }
     ]
 });
 
-console.log('✅ Componente QA Segurizado - CON CISCO ETHICAL HACKER cargado');
+console.log('✅ Componente QA Segurizado con prioridades cargado - 6 cursos clasificados');

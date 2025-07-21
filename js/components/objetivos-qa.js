@@ -1,5 +1,5 @@
 /**
- * 🎯 COMPONENTE: OBJETIVOS QA
+ * 🎯 COMPONENTE: OBJETIVOS QA CON PRIORIDADES
  * Archivo: js/components/objetivos-qa.js
  * Roadmap de demos e innovaciones en QA con Inteligencia Artificial
  */
@@ -9,12 +9,13 @@ window.TrainingPlan.registerComponent({
     icon: "🎯",
     borderColor: "#ff9800",
     courses: [
-        // === DEMOS PLANIFICADAS 2025-2026 ===
+        // === VANGUARDIA (DEMOS PLANIFICADAS 2025-2026) ===
         {
             fuente: "Roadmap QA",
             curso: "🤖 Demo 1: Robotframework-GenAI Multi-Proveedor",
             acceso: "Disponible v1.2+ - Sistema completo",
             tiempo: "Por definir",
+            prioridad: "Vanguardia", // 🚀 INNOVACIÓN IA
             expandible: true,
             subcursos: [
                 {
@@ -48,6 +49,7 @@ window.TrainingPlan.registerComponent({
             curso: "🤖 Demo 2: Grabador Inteligente + Autocuración",
             acceso: "Q1-Q2 2025 - Desarrollo interno",
             tiempo: "Por definir",
+            prioridad: "Vanguardia", // 🚀 IA AUTOCURACIÓN
             expandible: true,
             subcursos: [
                 {
@@ -73,6 +75,7 @@ window.TrainingPlan.registerComponent({
             curso: "📊 Demo 3: Análisis Avanzado + Dashboard",
             acceso: "Q3-Q4 2025 - Desarrollo interno",
             tiempo: "Por definir",
+            prioridad: "Vanguardia", // 🚀 ANALYTICS IA
             expandible: true,
             subcursos: [
                 {
@@ -98,6 +101,7 @@ window.TrainingPlan.registerComponent({
             curso: "🔄 Demo 4: Agente IA de Replicación",
             acceso: "Q3-Q4 2025 - Desarrollo interno",
             tiempo: "Por definir",
+            prioridad: "Vanguardia", // 🚀 AGENTES IA
             expandible: true,
             subcursos: [
                 {
@@ -123,6 +127,7 @@ window.TrainingPlan.registerComponent({
             curso: "🌐 Demo 5: Sistema Universal",
             acceso: "2026 - Desarrollo interno",
             tiempo: "Por definir",
+            prioridad: "Vanguardia", // 🚀 TESTING UNIVERSAL
             expandible: true,
             subcursos: [
                 {
@@ -144,12 +149,13 @@ window.TrainingPlan.registerComponent({
             ]
         },
 
-        // === OPORTUNIDADES FUTURAS ===
+        // === VANGUARDIA (OPORTUNIDADES FUTURAS) ===
         {
             fuente: "Roadmap QA",
             curso: "🧪 Demo 6: Laboratorio de IA para QA",
             acceso: "2026+ - Investigación y desarrollo",
             tiempo: "Por definir",
+            prioridad: "Vanguardia", // 🚀 LABORATORIO IA
             expandible: true,
             subcursos: [
                 {
@@ -179,6 +185,7 @@ window.TrainingPlan.registerComponent({
             curso: "🔄 Demo 7: Integración CI/CD Inteligente",
             acceso: "2026+ - Investigación y desarrollo",
             tiempo: "Por definir",
+            prioridad: "Vanguardia", // 🚀 DEVOPS IA
             expandible: true,
             subcursos: [
                 {
@@ -204,6 +211,7 @@ window.TrainingPlan.registerComponent({
             curso: "📱 Demo 8: Testing Cross-Platform Unificado",
             acceso: "2026+ - Investigación y desarrollo",
             tiempo: "Por definir",
+            prioridad: "Vanguardia", // 🚀 CROSS-PLATFORM
             expandible: true,
             subcursos: [
                 {
@@ -227,4 +235,4 @@ window.TrainingPlan.registerComponent({
     ]
 });
 
-console.log('✅ Componente Objetivos QA cargado - 8 demos principales (Demo 1-8), roadmap 2025-2026+');
+console.log('✅ Componente Objetivos QA con prioridades cargado - 8 demos VANGUARDIA');

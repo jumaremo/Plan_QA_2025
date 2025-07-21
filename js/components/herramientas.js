@@ -1,7 +1,7 @@
 /**
- * 🛠️ COMPONENTE: HERRAMIENTAS
+ * 🛠️ COMPONENTE: HERRAMIENTAS CON PRIORIDADES
  * Archivo: js/components/herramientas.js
- * Herramientas de desarrollo, IA y productividad para QA
+ * Herramientas de desarrollo, IA y productividad clasificadas por importancia
  */
 
 window.TrainingPlan.registerComponent({
@@ -9,24 +9,27 @@ window.TrainingPlan.registerComponent({
     icon: "🛠️",
     borderColor: "#17a2b8",
     courses: [
-        // === HERRAMIENTAS DE DESARROLLO ===
+        // === FUNDAMENTOS (HERRAMIENTAS ESENCIALES) ===
         {
             fuente: "One Drive",
             curso: "📝 Markdown - Documentación Técnica",
             acceso: "https://siesa1-my.sharepoint.com/:f:/g/personal/jmreinam_siesa_com/Et6mwQMpIpZHr9sCV_s2HsgBbM1bbqtRUoyazeOb4S00jA?e=v4Y95b",
-            tiempo: "4 horas"
+            tiempo: "4 horas",
+            prioridad: "Fundamentos" // 🏗️ DOCUMENTACIÓN BÁSICA
         },
         {
             fuente: "One Drive",
             curso: "💻 Tabby Terminal - Optimización QA",
             acceso: "https://siesa1-my.sharepoint.com/:f:/g/personal/jmreinam_siesa_com/EsHbGtmj9w1MrQFM_Hg3TPwBULxkI7rnjpn5Axj08v0UyA?e=Gei2wK",
-            tiempo: "4 horas"
+            tiempo: "4 horas",
+            prioridad: "Fundamentos" // 🏗️ TERMINAL ESENCIAL
         },
         {
             fuente: "GitLab Learn",
             curso: "🦊 Control de Versiones - Programa Completo",
             acceso: "Múltiples fuentes especializadas",
             tiempo: "16 horas",
+            prioridad: "Fundamentos", // 🏗️ GIT ESENCIAL
             expandible: true,
             subcursos: [
                 {
@@ -52,6 +55,7 @@ window.TrainingPlan.registerComponent({
             curso: "🔧 IDEs de Desarrollo - Herramientas Esenciales",
             acceso: "Plataformas oficiales de desarrollo",
             tiempo: "3 horas",
+            prioridad: "Fundamentos", // 🏗️ IDEs BÁSICOS
             expandible: true,
             subcursos: [
                 {
@@ -68,15 +72,17 @@ window.TrainingPlan.registerComponent({
             fuente: "Jira",
             curso: "📋 Gestión de Proyectos - Jira para Testers",
             acceso: "https://www.linkedin.com/posts/karina-n-paredes_jira-para-testers-activity-7348712595631079424-nMQI",
-            tiempo: "2 horas"
+            tiempo: "2 horas",
+            prioridad: "Fundamentos" // 🏗️ GESTIÓN PROYECTOS
         },
 
-        // === HERRAMIENTAS DE INTELIGENCIA ARTIFICIAL ===
+        // === ESPECIALIZACIÓN (IA TOOLKIT AVANZADO) ===
         {
             fuente: "Herramientas IA",
             curso: "🤖 Inteligencia Artificial - Toolkit Completo",
             acceso: "Plataformas de IA especializadas",
             tiempo: "25+ horas",
+            prioridad: "Especialización", // ⚡ IA AVANZADA
             expandible: true,
             subcursos: [
                 {
@@ -124,4 +130,4 @@ window.TrainingPlan.registerComponent({
     ]
 });
 
-console.log('✅ Componente Herramientas cargado - 6 cursos principales, 54+ horas totales');
+console.log('✅ Componente Herramientas con prioridades cargado - 6 cursos clasificados');

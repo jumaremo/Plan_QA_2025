@@ -1,9 +1,7 @@
 /**
- * 📦 COMPONENTE: QA MANUAL - VERIFICACIÓN COMPLETA
+ * 🔍 COMPONENTE: QA MANUAL CON PRIORIDADES
  * Archivo: js/components/qa-manual.js
- * 
- * Esta es la versión completa y verificada del componente QA Manual
- * con la distribución exacta que debe tener
+ * Descripción: Fundamentos de QA Manual clasificados por nivel de prioridad
  */
 
 window.TrainingPlan.registerComponent({
@@ -11,11 +9,13 @@ window.TrainingPlan.registerComponent({
     icon: "🔍",
     borderColor: "#28a745",
     courses: [
+        // === FUNDAMENTOS (PRIORIDAD ALTA) ===
         {
             fuente: "Platzi",
             curso: "Fundamentos QA - Platzi",
             acceso: "https://platzi.com/cursos/pruebas-software/",
             tiempo: "10 horas",
+            prioridad: "Fundamentos", // 🏗️ NIVEL 1
             expandible: true,
             subcursos: [
                 {
@@ -29,10 +29,27 @@ window.TrainingPlan.registerComponent({
             ]
         },
         {
+            fuente: "ISTQB",
+            curso: "Glosario ISTQB",
+            acceso: "https://siesa1-my.sharepoint.com/:b:/g/personal/jmreinam_siesa_com/Ed0xpQrRlPJFtDeob0fN2DYBKRNGoiGV6jikzAH33S3eMg?e=I6YSkc",
+            tiempo: "4 horas",
+            prioridad: "Fundamentos" // 🏗️ NIVEL 1
+        },
+        {
+            fuente: "ISTQB",
+            curso: "Syllabus ISTQB",
+            acceso: "https://siesa1-my.sharepoint.com/:b:/g/personal/jmreinam_siesa_com/EUgb-cZ7MGFOguABQAfhJKEBdq-yZcW2_ojB-MtNGbNmsw?e=KgNcg3",
+            tiempo: "8 horas",
+            prioridad: "Fundamentos" // 🏗️ NIVEL 1
+        },
+
+        // === ESPECIALIZACIÓN (PRIORIDAD MEDIA) ===
+        {
             fuente: "One Drive",
-            curso: "Fundamentos QA - One Drive",
+            curso: "Fundamentos QA - Sesiones Avanzadas",
             acceso: "https://siesa1-my.sharepoint.com/:p:/g/personal/jmreinam_siesa_com/EeM1ECqHQGVMvISxFng1AsQB0KrEMq-Vir6oMOUOottYdQ?e=y2c4Mm",
             tiempo: "16 horas",
+            prioridad: "Especialización", // ⚡ NIVEL 3
             expandible: true,
             subcursos: [
                 {
@@ -72,20 +89,8 @@ window.TrainingPlan.registerComponent({
                     enlace: "https://siesa1-my.sharepoint.com/:p:/g/personal/jmreinam_siesa_com/EZTN0WpHruBNqDYZ_FeAIxQB05PtyQQl2natMkYug7M9rw?e=1BawOD"
                 }
             ]
-        },
-        {
-            fuente: "ISTQB",
-            curso: "Glosario ISTQB",
-            acceso: "https://siesa1-my.sharepoint.com/:b:/g/personal/jmreinam_siesa_com/Ed0xpQrRlPJFtDeob0fN2DYBKRNGoiGV6jikzAH33S3eMg?e=I6YSkc",
-            tiempo: "4 horas"
-        },
-        {
-            fuente: "ISTQB",
-            curso: "Syllabus ISTQB",
-            acceso: "https://siesa1-my.sharepoint.com/:b:/g/personal/jmreinam_siesa_com/EUgb-cZ7MGFOguABQAfhJKEBdq-yZcW2_ojB-MtNGbNmsw?e=KgNcg3",
-            tiempo: "8 horas"
         }
     ]
 });
 
-console.log('✅ Componente QA Manual VERIFICADO cargado');
+console.log('✅ Componente QA Manual con prioridades cargado - 4 cursos clasificados');

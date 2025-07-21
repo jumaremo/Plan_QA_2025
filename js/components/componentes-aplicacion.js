@@ -1,5 +1,5 @@
 /**
- * 🧩 COMPONENTE: COMPONENTES DE APLICACIÓN
+ * 🧩 COMPONENTE: COMPONENTES DE APLICACIÓN CON PRIORIDADES
  * Archivo: js/components/componentes-aplicacion.js
  * SDK y módulos específicos de Siesa Business para QA especializado
  */
@@ -9,21 +9,23 @@ window.TrainingPlan.registerComponent({
     icon: "🧩",
     borderColor: "#9c27b0",
     courses: [
-        // === SDK SIESA DEVELOPER ===
+        // === ESPECIALIZACIÓN (SDK SIESA) ===
         {
             fuente: "SDK Docs",
             curso: "⚙️ SDK Siesa Developer - Documentación Técnica",
             acceso: "https://sdk-docs.siesadev.com/login",
             tiempo: "Por definir",
+            prioridad: "Especialización", // ⚡ ESPECÍFICO SIESA
             nota: "⚠️ Cursos por validar con Tole - Pendiente de consolidación"
         },
 
-        // === MÓDULOS SIESA BUSINESS ===
+        // === ESPECIALIZACIÓN (MÓDULOS SIESA BUSINESS) ===
         {
             fuente: "Producto Siesa Business",
             curso: "👥 Módulos Siesa Business - Especialización Funcional",
             acceso: "https://gitlab.siesadev.com/",
             tiempo: "Por definir",
+            prioridad: "Especialización", // ⚡ FUNCIONAL SIESA
             expandible: true,
             subcursos: [
                 {
@@ -43,4 +45,4 @@ window.TrainingPlan.registerComponent({
     ]
 });
 
-console.log('✅ Componente Componentes de Aplicación cargado - 2 cursos principales (pendientes de consolidación)');
+console.log('✅ Componente Componentes de Aplicación con prioridades cargado - 2 cursos ESPECIALIZACIÓN');

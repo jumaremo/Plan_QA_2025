@@ -1,7 +1,7 @@
 /**
- * 📚 COMPONENTE: COMPLEMENTARIO HABILIDADES TÉCNICAS
+ * 📚 COMPONENTE: COMPLEMENTARIO HABILIDADES TÉCNICAS CON PRIORIDADES
  * Archivo: js/components/complementario-tecnico.js
- * Formación técnica completa: Python, Testing, Seguridad, Inglés y Certificaciones
+ * Formación técnica completa clasificada por nivel de importancia
  */
 
 window.TrainingPlan.registerComponent({
@@ -9,12 +9,13 @@ window.TrainingPlan.registerComponent({
     icon: "📚",
     borderColor: "#795548",
     courses: [
-        // === PYTHON - FUNDAMENTOS Y AVANZADO ===
+        // === AUTOMATIZACIÓN (PYTHON CORE) ===
         {
             fuente: "Platzi",
             curso: "🐍 Python - Programa Completo de Fundamentos",
             acceso: "https://platzi.com/cursos/python/",
             tiempo: "22 horas",
+            prioridad: "Automatización", // 🤖 LENGUAJE BASE
             expandible: true,
             subcursos: [
                 {
@@ -44,6 +45,7 @@ window.TrainingPlan.registerComponent({
             curso: "🐍 Python Cisco - Certificación Profesional",
             acceso: "https://www.netacad.com/es/courses/python-essentials-1",
             tiempo: "70 horas",
+            prioridad: "Automatización", // 🤖 CERTIFICACIÓN OFICIAL
             expandible: true,
             subcursos: [
                 {
@@ -60,15 +62,17 @@ window.TrainingPlan.registerComponent({
             fuente: "Platzi",
             curso: "💻 Programación Básica - Fundamentos",
             acceso: "https://platzi.com/cursos/programacion-basica/",
-            tiempo: "15 horas"
+            tiempo: "15 horas",
+            prioridad: "Automatización" // 🤖 LÓGICA PROGRAMACIÓN
         },
 
-        // === TESTING Y AUTOMATIZACIÓN AVANZADA ===
+        // === ESPECIALIZACIÓN (TESTING AVANZADO) ===
         {
             fuente: "TAU",
             curso: "🧪 Testing Paths - Especialización Avanzada",
             acceso: "https://testautomationu.applitools.com/learningpaths.html",
             tiempo: "40 horas",
+            prioridad: "Especialización", // ⚡ TESTING PATHS
             expandible: true,
             subcursos: [
                 {
@@ -90,6 +94,7 @@ window.TrainingPlan.registerComponent({
             curso: "🤖 Testing Especializado - Cursos Master",
             acceso: "https://www.udemy.com/course/master-robot-framework-nivel-1-en-espanol/",
             tiempo: "41 horas",
+            prioridad: "Especialización", // ⚡ TESTING MASTER
             expandible: true,
             subcursos: [
                 {
@@ -107,6 +112,7 @@ window.TrainingPlan.registerComponent({
             curso: "🔬 Microsoft Testing - Programa Oficial",
             acceso: "https://learn.microsoft.com/en-us/shows/software-testing-fundamentals/",
             tiempo: "15 horas",
+            prioridad: "Especialización", // ⚡ TESTING MICROSOFT
             expandible: true,
             subcursos: [
                 {
@@ -127,15 +133,15 @@ window.TrainingPlan.registerComponent({
             fuente: "Google Aprendizaje",
             curso: "🔍 Google Testing - Learn Testing",
             acceso: "https://web.dev/learn/testing/",
-            tiempo: "8 horas"
+            tiempo: "8 horas",
+            prioridad: "Especialización" // ⚡ TESTING WEB
         },
-
-        // === SEGURIDAD INFORMÁTICA COMPLETA ===
         {
             fuente: "Platzi",
             curso: "🔐 Ciberseguridad - Programa Completo",
             acceso: "https://platzi.com/cursos/intro-ciberseguridad-empresas/",
             tiempo: "47 horas",
+            prioridad: "Especialización", // ⚡ SECURITY COMPLETO
             expandible: true,
             subcursos: [
                 {
@@ -224,11 +230,14 @@ window.TrainingPlan.registerComponent({
                 }
             ]
         },
+
+        // === VANGUARDIA (PENTESTING PROFESIONAL) ===
         {
             fuente: "Kali Linux",
             curso: "⚔️ Pentesting Profesional - Certificaciones OffSec",
             acceso: "https://www.offsec.com/courses/pen-200/",
             tiempo: "1217 horas",
+            prioridad: "Vanguardia", // 🚀 PENTESTING PROFESIONAL
             expandible: true,
             subcursos: [
                 {
@@ -245,13 +254,12 @@ window.TrainingPlan.registerComponent({
                 }
             ]
         },
-
-        // === INGLÉS TÉCNICO COMPLETO ===
         {
             fuente: "Platzi",
             curso: "🌍 Inglés Técnico - Especialización",
             acceso: "https://platzi.com/cursos/ingleschatgpt/",
             tiempo: "2 horas",
+            prioridad: "Vanguardia", // 🚀 COMUNICACIÓN GLOBAL
             expandible: true,
             subcursos: [
                 {
@@ -269,6 +277,7 @@ window.TrainingPlan.registerComponent({
             curso: "🎓 Inglés SENA - Programa Completo (13 Niveles)",
             acceso: "https://english-level-1a.netlify.app/",
             tiempo: "Por definir",
+            prioridad: "Vanguardia", // 🚀 INGLÉS COMPLETO
             expandible: true,
             subcursos: [
                 {
@@ -420,4 +429,4 @@ window.TrainingPlan.registerComponent({
     ]
 });
 
-console.log('✅ Componente Complementario Habilidades Técnicas cargado - 11 cursos principales, 1400+ horas totales, 70+ subcursos');
+console.log('✅ Componente Complementario Habilidades Técnicas con prioridades cargado - 11 cursos clasificados');

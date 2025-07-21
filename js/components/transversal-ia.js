@@ -1,7 +1,7 @@
 /**
- * 🧠 COMPONENTE: TRANSVERSAL IA
+ * 🧠 COMPONENTE: TRANSVERSAL IA CON PRIORIDADES
  * Archivo: js/components/transversal-ia.js
- * Formación transversal en Inteligencia Artificial y productividad
+ * Formación transversal en IA clasificada por nivel de adopción
  */
 
 window.TrainingPlan.registerComponent({
@@ -9,12 +9,13 @@ window.TrainingPlan.registerComponent({
     icon: "🧠",
     borderColor: "#ff6b6b",
     courses: [
-        // === PLATZI - INTELIGENCIA ARTIFICIAL PARA LA PRODUCTIVIDAD ===
+        // === FUNDAMENTOS (IA BÁSICA PARA PRODUCTIVIDAD) ===
         {
             fuente: "Platzi",
             curso: "🤖 IA para la Productividad - Fundamentos",
             acceso: "https://platzi.com/cursos/introduccion-ai/",
             tiempo: "18 horas",
+            prioridad: "Fundamentos", // 🏗️ IA BÁSICA ESENCIAL
             expandible: true,
             subcursos: [
                 {
@@ -44,27 +45,35 @@ window.TrainingPlan.registerComponent({
             ]
         },
         {
-            fuente: "Platzi",
-            curso: "🎨 IA para Creación Visual",
-            acceso: "https://platzi.com/cursos/midjourney/",
-            tiempo: "5 horas",
+            fuente: "Universidad Mi Siesa",
+            curso: "🎓 GEN AI Siesa University - Programa Completo",
+            acceso: "https://www.miuniversidadsiesa.com/",
+            tiempo: "24+ horas",
+            prioridad: "Fundamentos", // 🏗️ IA CORPORATIVA
             expandible: true,
             subcursos: [
                 {
-                    nombre: "🖼️ Midjourney - Generación de Imágenes",
-                    enlace: "https://platzi.com/cursos/midjourney/"
+                    nombre: "🥉 GEN AI NIVEL 100 - Fundamentos",
+                    enlace: "https://www.miuniversidadsiesa.com/cursos/carpetas/20058"
                 },
                 {
-                    nombre: "🎨 Stable Diffusion - IA Artística",
-                    enlace: "https://platzi.com/cursos/sd/"
+                    nombre: "🥈 GEN AI NIVEL 200 - Intermedio",
+                    enlace: "https://www.miuniversidadsiesa.com/cursos/carpetas/20075"
+                },
+                {
+                    nombre: "🥇 GEN AI NIVEL 300 - Avanzado (Próximamente)",
+                    enlace: "Pendiente por programar"
                 }
             ]
         },
+
+        // === ESPECIALIZACIÓN (IA APLICADA) ===
         {
             fuente: "Platzi",
             curso: "💼 IA para Negocios y Marketing",
             acceso: "https://platzi.com/cursos/ia-marketing-contenido/",
             tiempo: "5 horas",
+            prioridad: "Especialización", // ⚡ IA EMPRESARIAL
             expandible: true,
             subcursos: [
                 {
@@ -86,6 +95,7 @@ window.TrainingPlan.registerComponent({
             curso: "📊 IA para Análisis de Datos",
             acceso: "https://platzi.com/cursos/gpt-con-google-sheets/",
             tiempo: "3 horas",
+            prioridad: "Especialización", // ⚡ IA ANALÍTICA
             expandible: true,
             subcursos: [
                 {
@@ -98,11 +108,32 @@ window.TrainingPlan.registerComponent({
                 }
             ]
         },
+
+        // === VANGUARDIA (IA CREATIVA Y AVANZADA) ===
+        {
+            fuente: "Platzi",
+            curso: "🎨 IA para Creación Visual",
+            acceso: "https://platzi.com/cursos/midjourney/",
+            tiempo: "5 horas",
+            prioridad: "Vanguardia", // 🚀 IA CREATIVA
+            expandible: true,
+            subcursos: [
+                {
+                    nombre: "🖼️ Midjourney - Generación de Imágenes",
+                    enlace: "https://platzi.com/cursos/midjourney/"
+                },
+                {
+                    nombre: "🎨 Stable Diffusion - IA Artística",
+                    enlace: "https://platzi.com/cursos/sd/"
+                }
+            ]
+        },
         {
             fuente: "Platzi",
             curso: "⚖️ IA Ética y Comunicación",
             acceso: "https://platzi.com/cursos/ingles-ia/",
             tiempo: "3 horas",
+            prioridad: "Vanguardia", // 🚀 IA ÉTICA
             expandible: true,
             subcursos: [
                 {
@@ -118,31 +149,8 @@ window.TrainingPlan.registerComponent({
                     enlace: "https://platzi.com/cursos/diseno-etico-ia/"
                 }
             ]
-        },
-
-        // === UNIVERSIDAD MI SIESA - GENERATIVE AI ===
-        {
-            fuente: "Universidad Mi Siesa",
-            curso: "🎓 GEN AI Siesa University - Programa Completo",
-            acceso: "https://www.miuniversidadsiesa.com/",
-            tiempo: "24+ horas",
-            expandible: true,
-            subcursos: [
-                {
-                    nombre: "🥉 GEN AI NIVEL 100 - Fundamentos",
-                    enlace: "https://www.miuniversidadsiesa.com/cursos/carpetas/20058"
-                },
-                {
-                    nombre: "🥈 GEN AI NIVEL 200 - Intermedio",
-                    enlace: "https://www.miuniversidadsiesa.com/cursos/carpetas/20075"
-                },
-                {
-                    nombre: "🥇 GEN AI NIVEL 300 - Avanzado (Próximamente)",
-                    enlace: "Pendiente por programar"
-                }
-            ]
         }
     ]
 });
 
-console.log('✅ Componente Transversal IA cargado - 7 cursos principales, 58+ horas totales');
+console.log('✅ Componente Transversal IA con prioridades cargado - 7 cursos clasificados');

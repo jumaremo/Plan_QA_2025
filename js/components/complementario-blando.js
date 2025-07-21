@@ -1,7 +1,7 @@
 /**
- * 💭 COMPONENTE: COMPLEMENTARIO HABILIDADES BLANDAS
+ * 💭 COMPONENTE: COMPLEMENTARIO HABILIDADES BLANDAS CON PRIORIDADES
  * Archivo: js/components/complementario-blando.js
- * Desarrollo de habilidades de liderazgo, innovación y gestión de equipos
+ * Desarrollo de habilidades de liderazgo, innovación y gestión clasificadas
  */
 
 window.TrainingPlan.registerComponent({
@@ -9,12 +9,13 @@ window.TrainingPlan.registerComponent({
     icon: "💭",
     borderColor: "#795548",
     courses: [
-        // === HISTORIA DE LA INNOVACIÓN CON DIANA URIBE ===
+        // === FUNDAMENTOS (CULTURA E INSPIRACIÓN) ===
         {
             fuente: "Platzi",
             curso: "📚 Historia de la Innovación y el Emprendimiento - Diana Uribe",
             acceso: "https://platzi.com/cursos/historia-innovacion/",
             tiempo: "2 horas",
+            prioridad: "Fundamentos", // 🏗️ CULTURA INNOVACIÓN
             expandible: true,
             subcursos: [
                 {
@@ -47,45 +48,51 @@ window.TrainingPlan.registerComponent({
                 }
             ]
         },
-
-        // === LIDERAZGO Y MOTIVACIÓN DE EQUIPOS ===
         {
             fuente: "Platzi",
             curso: "👥 Liderazgo para Alta Gerencia",
             acceso: "https://platzi.com/cursos/alta-gerencia/",
-            tiempo: "1 hora"
+            tiempo: "1 hora",
+            prioridad: "Fundamentos" // 🏗️ LIDERAZGO BÁSICO
         },
         {
             fuente: "Platzi",
             curso: "⚡ Motivación para Equipos de Trabajo",
             acceso: "https://platzi.com/cursos/motivacion-equipos/",
-            tiempo: "1 hora"
+            tiempo: "1 hora",
+            prioridad: "Fundamentos" // 🏗️ MOTIVACIÓN BÁSICA
         },
+
+        // === ESPECIALIZACIÓN (LIDERAZGO AVANZADO) ===
         {
             fuente: "Platzi",
             curso: "🧠 Liderazgo Intermedio - Comportamientos",
             acceso: "https://platzi.com/cursos/liderazgo-comportamientos/",
-            tiempo: "1 hora"
+            tiempo: "1 hora",
+            prioridad: "Especialización" // ⚡ LIDERAZGO INTERMEDIO
         },
         {
             fuente: "Platzi",
             curso: "🌟 Identificación y Retención de Talento",
             acceso: "https://platzi.com/cursos/retencion-talento/",
-            tiempo: "1 hora"
+            tiempo: "1 hora",
+            prioridad: "Especialización" // ⚡ GESTIÓN TALENTO
         },
         {
             fuente: "Platzi",
             curso: "📊 Liderazgo Intermedio - Evaluación de Comportamientos",
             acceso: "https://platzi.com/cursos/liderazgo-contingencia/",
-            tiempo: "1 hora"
+            tiempo: "1 hora",
+            prioridad: "Especialización" // ⚡ EVALUACIÓN AVANZADA
         },
         {
             fuente: "Platzi",
             curso: "🤝 Liderazgo para Equipos de Trabajo",
             acceso: "https://platzi.com/cursos/liderazgo-equipos/",
-            tiempo: "3 horas"
+            tiempo: "3 horas",
+            prioridad: "Especialización" // ⚡ LIDERAZGO EQUIPOS
         }
     ]
 });
 
-console.log('✅ Componente Complementario Habilidades Blandas cargado - 7 cursos principales, 10 horas totales');
+console.log('✅ Componente Complementario Habilidades Blandas con prioridades cargado - 7 cursos clasificados');

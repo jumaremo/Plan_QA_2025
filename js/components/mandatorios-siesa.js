@@ -1,5 +1,5 @@
 /**
- * ⭐ COMPONENTE: MANDATORIOS SIESA
+ * ⭐ COMPONENTE: MANDATORIOS SIESA CON PRIORIDADES
  * Archivo: js/components/mandatorios-siesa.js
  * Cursos obligatorios sobre ADN Siesa y habilidades blandas corporativas
  */
@@ -15,6 +15,7 @@ window.TrainingPlan.registerComponent({
             curso: "🧬 ADN Siesa - Programa de Habilidades Blandas Corporativas",
             acceso: "https://www.miuniversidadsiesa.com/",
             tiempo: "2 horas",
+            prioridad: "Fundamentos", // 🏗️ OBLIGATORIO EMPRESA
             expandible: true,
             subcursos: [
                 {
@@ -38,4 +39,4 @@ window.TrainingPlan.registerComponent({
     ]
 });
 
-console.log('✅ Componente Mandatorios Siesa cargado - 1 curso principal, 2 horas totales');
+console.log('✅ Componente Mandatorios Siesa con prioridades cargado - 1 curso FUNDAMENTAL');
