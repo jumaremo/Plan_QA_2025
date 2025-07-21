@@ -63,8 +63,8 @@ window.TrainingPlan.registerComponent({
                     enlace: "https://code.visualstudio.com/docs/introvideos/basics"
                 },
                 {
-                    nombre: "PyCharm - Learn Basics",
-                    enlace: "https://www.jetbrains.com/pycharm/learn/"
+                    nombre: "PyCharm - Quick Start Guide",
+                    enlace: "https://www.jetbrains.com/help/pycharm/quick-start-guide.html"
                 }
             ]
         },
