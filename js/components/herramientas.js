@@ -69,11 +69,45 @@ window.TrainingPlan.registerComponent({
             ]
         },
         {
-            fuente: "Jira",
-            curso: "📋 Gestión de Proyectos - Jira para Testers",
-            acceso: "https://www.linkedin.com/posts/karina-n-paredes_jira-para-testers-activity-7348712595631079424-nMQI",
-            tiempo: "2 horas",
-            prioridad: "Fundamentos" // 🏗️ GESTIÓN PROYECTOS
+            fuente: "Atlassian",
+            curso: "📋 Jira para Testers - Programa Oficial",
+            acceso: "https://university.atlassian.com/student/path/815443-jira-fundamentals",
+            tiempo: "3 horas",
+            prioridad: "Fundamentos", // 🏗️ GESTIÓN PROYECTOS
+            expandible: true,
+            subcursos: [
+                {
+                    nombre: "Jira Fundamentals - Atlassian University (25 min + Badge)",
+                    enlace: "https://university.atlassian.com/student/path/815443-jira-fundamentals"
+                },
+                {
+                    nombre: "Jira Workflows Guide - Documentación Oficial Actualizada",
+                    enlace: "https://www.atlassian.com/software/jira/guides/workflows/overview"
+                },
+                {
+                    nombre: "Work with Workflows - Support Documentation",
+                    enlace: "https://support.atlassian.com/jira-cloud-administration/docs/work-with-issue-workflows/"
+                },
+                {
+                    nombre: "Testing Best Practices - Top 7 Management Practices",
+                    enlace: "https://community.atlassian.com/t5/Marketplace-Apps-Integrations/Top-7-best-practices-for-test-management-in-Jira/ba-p/1534476"
+                },
+                {
+                    nombre: "Jira for Testers - Complete Feature Guide",
+                    enlace: "https://community.atlassian.com/forums/Jira-articles/Exploring-Jira-features-Part-2-Jira-for-Testers/ba-p/2403466"
+                },
+                {
+                    nombre: "Test Case Writing - 6 Best Practices",
+                    enlace: "https://community.atlassian.com/t5/Agile-articles/Best-Practices-to-Write-and-Manage-Test-Cases-in-Jira/ba-p/1048283"
+                }
+            ]
+        },
+        {
+            fuente: "YouTube",
+            curso: "🧪 AgileTest - Test Management para Jira",
+            acceso: "https://www.youtube.com/watch?time_continue=8&v=FPLP0s3pzT8&embeds_referring_euri=https%3A%2F%2Fteams.microsoft.com%2F&source_ve_path=Mjg2NjY",
+            tiempo: "30 minutos",
+            prioridad: "Fundamentos" // 🏗️ HERRAMIENTA DE TESTING
         },
 
         // === ESPECIALIZACIÓN (IA TOOLKIT AVANZADO) ===
@@ -130,4 +164,4 @@ window.TrainingPlan.registerComponent({
     ]
 });
 
-console.log('✅ Componente Herramientas con prioridades cargado - 6 cursos clasificados');
+console.log('✅ Componente Herramientas con prioridades cargado - 7 cursos clasificados');

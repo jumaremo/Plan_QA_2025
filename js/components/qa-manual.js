@@ -77,10 +77,6 @@ window.TrainingPlan.registerComponent({
                     enlace: "https://siesa1-my.sharepoint.com/:p:/g/personal/jmreinam_siesa_com/ESOXkESXMdFIvXcMlvnjHekBVZtAXIm_AQPOc80nqFEd1g?e=dpYtqZ"
                 },
                 {
-                    nombre: "Demo Video-AgileTest | Comprehensive Test Management for Jira",
-                    enlace: "https://www.youtube.com/watch?time_continue=8&v=FPLP0s3pzT8&embeds_referring_euri=https%3A%2F%2Fteams.microsoft.com%2F&source_ve_path=Mjg2NjY"
-                },
-                {
                     nombre: "08 - Sesión Capacitación QA - Testing en un ERP",
                     enlace: "https://siesa1-my.sharepoint.com/:p:/g/personal/jmreinam_siesa_com/EZoBi6fLh_BJnATjLaL8Tt4BiJSd5k7kVLz_FaAXsbcLbg?e=CCMUt4"
                 },
