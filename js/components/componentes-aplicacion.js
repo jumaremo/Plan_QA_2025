@@ -23,22 +23,22 @@ window.TrainingPlan.registerComponent({
         {
             fuente: "Producto Siesa Business",
             curso: "👥 Módulos Siesa Business - Especialización Funcional",
-            acceso: "https://gitlab.siesadev.com/",
+            acceso: "https://gitlab.siesadev.com/users/sign_in",
             tiempo: "Por definir",
             prioridad: "Especialización", // ⚡ FUNCIONAL SIESA
             expandible: true,
             subcursos: [
                 {
                     nombre: "👔 HCM - 8 Flujos de Gestión Humana",
-                    enlace: "Enlace GitLab pendiente por consolidar"
+                    enlace: "https://gitlab.siesadev.com/users/sign_in"
                 },
                 {
                     nombre: "💰 Financiero - Flujos de Contabilización",
-                    enlace: "Enlace GitLab pendiente por consolidar"
+                    enlace: "https://gitlab.siesadev.com/users/sign_in"
                 },
                 {
                     nombre: "💵 Nómina - Flujos de Nómina",
-                    enlace: "Enlace GitLab pendiente por consolidar"
+                    enlace: "https://gitlab.siesadev.com/users/sign_in"
                 }
             ]
         }

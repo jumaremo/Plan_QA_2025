@@ -43,13 +43,13 @@ window.TrainingPlan.registerComponent({
             prioridad: "Fundamentos" // 🏗️ NIVEL 1
         },
 
-        // === ESPECIALIZACIÓN (PRIORIDAD MEDIA) ===
+        // === FUNDAMENTOS (SESIONES AVANZADAS - RECLASIFICADO) ===
         {
             fuente: "One Drive",
             curso: "Fundamentos QA - Sesiones Avanzadas",
             acceso: "https://siesa1-my.sharepoint.com/:p:/g/personal/jmreinam_siesa_com/EeM1ECqHQGVMvISxFng1AsQB0KrEMq-Vir6oMOUOottYdQ?e=y2c4Mm",
             tiempo: "16 horas",
-            prioridad: "Especialización", // ⚡ NIVEL 3
+            prioridad: "Fundamentos", // 🏗️ NIVEL 1 - RECLASIFICADO
             expandible: true,
             subcursos: [
                 {
