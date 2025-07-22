@@ -75,7 +75,7 @@ window.TrainingPlan.registerComponent({
             prioridad: "Automatización" // 🤖 NIVEL 2
         },
         {
-            fuente: "Youtube",
+            fuente: "YouTube",
             curso: "📹 Tutorial Robot Framework - Manish Verma (Fundamentos)",
             acceso: "https://www.youtube.com/watch?v=zcT8hSipe2A&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=2",
             tiempo: "5+ horas",
@@ -151,7 +151,7 @@ window.TrainingPlan.registerComponent({
 
         // === ESPECIALIZACIÓN (HERRAMIENTAS ESPECÍFICAS) ===
         {
-            fuente: "Youtube",
+            fuente: "YouTube",
             curso: "🎯 Tutorial Robot Framework - XPath & CSS Selectors",
             acceso: "https://www.youtube.com/watch?v=5LV4z_-91WY&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=25",
             tiempo: "4+ horas",
@@ -173,7 +173,7 @@ window.TrainingPlan.registerComponent({
             ]
         },
         {
-            fuente: "Youtube",
+            fuente: "YouTube",
             curso: "🚀 Tutorial Robot Framework - Manish Verma (Avanzado)",
             acceso: "https://www.youtube.com/watch?v=dLhZuf0RKqQ&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=44",
             tiempo: "6+ horas",
@@ -197,14 +197,14 @@ window.TrainingPlan.registerComponent({
 
         // === VANGUARDIA (TÉCNICAS AVANZADAS) ===
         {
-            fuente: "Youtube",
+            fuente: "YouTube",
             curso: "🎨 Selenium CSS Selector Tutorial - Completo",
             acceso: "https://www.youtube.com/watch?v=xDBkWKsntdk&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=62",
             tiempo: "1h 15m",
             prioridad: "Vanguardia" // 🚀 NIVEL 4
         },
         {
-            fuente: "Youtube",
+            fuente: "YouTube",
             curso: "🎨 Selenium XPath Tutorial - Completo",
             acceso: "https://www.youtube.com/watch?v=U0WMFjnbb4I&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=63",
             tiempo: "1h 30m",
