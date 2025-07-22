@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Framework Academy - En Construcción | Plan QA 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 650px;
+            margin: 20px;
+        }
+
+        .robot-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: robotMove 3s ease-in-out infinite;
+        }
+
+        @keyframes robotMove {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-10px) rotate(5deg); }
+            50% { transform: translateY(0px) rotate(0deg); }
+            75% { transform: translateY(-5px) rotate(-5deg); }
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #ff8f00;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .academy-badge {
+            background: linear-gradient(135deg, #ffc107, #ff8f00);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+
+        .message {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .progress-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        .progress-bar {
+            background: #e9ecef;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #ffc107, #ff8f00);
+            height: 100%;
+            width: 65%;
+            border-radius: 5px;
+            animation: loading 4s ease-in-out infinite;
+        }
+
+        @keyframes loading {
+            0%, 100% { width: 65%; }
+            50% { width: 80%; }
+        }
+
+        .progress-details {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .status {
+            color: #ff8f00;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .back-btn, .academy-btn {
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .academy-btn {
+            background: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+        }
+
+        .academy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 193, 7, 0.4);
+        }
+
+        .academy-info {
+            background: rgba(255, 193, 7, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 4px solid #ffc107;
+            text-align: left;
+        }
+
+        .academy-info h4 {
+            color: #ff8f00;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .academy-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .academy-info li {
+            padding: 5px 0;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .academy-info li::before {
+            content: '🤖 ';
+            margin-right: 8px;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .email-link {
+            color: #ff8f00;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .academy-badge {
+                font-size: 1rem;
+                padding: 12px 20px;
+            }
+            
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .back-btn, .academy-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="robot-icon">🤖</div>
+        <h1>Robot Framework Academy</h1>
+        <div class="subtitle">Academia en Construcción</div>
+        
+        <div class="academy-badge">
+            🎓 251 Lecciones Prácticas
+        </div>
+        
+        <div class="message">
+            <p>Estamos desarrollando una <strong>academia completa de Robot Framework</strong> con 251 lecciones prácticas.</p>
+            <p>Este programa integral cubrirá desde fundamentos hasta técnicas avanzadas de automatización.</p>
+        </div>
+
+        <div class="progress-section">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-details">
+                <span>📚 Academia en desarrollo</span>
+                <span>65% completado</span>
+            </div>
+        </div>
+        
+        <div class="status">Estado: Programa en preparación</div>
+
+        <div class="academy-info">
+            <h4>📋 Contenido de la Academia</h4>
+            <ul>
+                <li>Getting Started with Robot Framework</li>
+                <li>Python for Robot Framework</li>
+                <li>Web Testing with Robot Framework</li>
+                <li>Mobile Testing with Robot Framework</li>
+                <li>API Testing with Robot Framework</li>
+                <li>Data-Driven Testing</li>
+                <li>Creating Custom Keywords</li>
+                <li>Advanced Robot Framework Techniques</li>
+            </ul>
+            <p style="margin-top: 15px; font-size: 0.9rem; color: #6c757d;">
+                <strong>Total:</strong> 251 lecciones distribuidas en 8 módulos especializados para convertirte en un experto en automatización con Robot Framework.
+            </p>
+        </div>
+
+        <div class="buttons">
+            <a href="../../index.html" class="back-btn">← Volver al Plan Principal</a>
+            <a href="https://robotframework.org/" class="academy-btn" target="_blank">🤖 Robot Framework Oficial</a>
+        </div>
+
+        <div class="contact-info">
+            <p>📧 Para más información: <a href="mailto:jmreinam@siesa.com" class="email-link">jmreinam@siesa.com</a></p>
+            <p>📅 Disponibilidad estimada: <strong>Q3 2025</strong></p>
+        </div>
+    </div>
+
+    <script>
+        // Efecto de progreso animado
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressFill = document.querySelector('.progress-fill');
+            let width = 65;
+            
+            setInterval(() => {
+                width = width >= 80 ? 65 : width + 0.3;
+                progressFill.style.width = width + '%';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

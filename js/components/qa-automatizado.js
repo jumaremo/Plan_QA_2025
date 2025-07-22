@@ -1,21 +1,21 @@
 /**
  * 🤖 COMPONENTE: QA AUTOMATIZADO CON PRIORIDADES
  * Archivo: js/components/qa-automatizado.js
- * Automatización clasificada por nivel de prioridad estratégica
+ * Testing automatizado y frameworks clasificados por importancia
  */
 
 window.TrainingPlan.registerComponent({
-    name: "QA Automatizado",
-    icon: "🤖", 
+    name: "🤖 QA Automatizado",
+    icon: "🤖",
     borderColor: "#ffc107",
     courses: [
-        // === AUTOMATIZACIÓN (CORE SKILLS) ===
+        // === AUTOMATIZACIÓN (PRIORIDAD CORE) ===
         {
             fuente: "Platzi",
-            curso: "QA y Automatización de Pruebas - Platzi",
+            curso: "🤖 QA y Automatización de Pruebas - Platzi",
             acceso: "https://platzi.com/cursos/automatizacion-pruebas/",
             tiempo: "29 horas",
-            prioridad: "Automatización", // 🤖 CORE AUTOMATION
+            prioridad: "Automatización", // 🤖 NIVEL 2
             expandible: true,
             subcursos: [
                 {
@@ -62,24 +62,24 @@ window.TrainingPlan.registerComponent({
         },
         {
             fuente: "Moodle Siesa",
-            curso: "Testing Python con Robot Framework",
+            curso: "🐍 Testing Python con Robot Framework",
             acceso: "https://capacitaciones.siesa.com:8099/moodle/course/view.php?id=210",
             tiempo: "24 horas",
-            prioridad: "Automatización" // 🤖 FRAMEWORK PRINCIPAL
+            prioridad: "Automatización" // 🤖 NIVEL 2
         },
         {
             fuente: "TAU",
-            curso: "Introduction to Robot Framework",
+            curso: "🔧 Introduction to Robot Framework",
             acceso: "https://testautomationu.applitools.com/robot-framework-refresh/",
             tiempo: "1 hora",
-            prioridad: "Automatización" // 🤖 INTRODUCCIÓN ESENCIAL
+            prioridad: "Automatización" // 🤖 NIVEL 2
         },
         {
             fuente: "Youtube",
-            curso: "Tutorial Robot Framework - Manish Verma (Fundamentos)",
+            curso: "📹 Tutorial Robot Framework - Manish Verma (Fundamentos)",
             acceso: "https://www.youtube.com/watch?v=zcT8hSipe2A&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=2",
             tiempo: "5+ horas",
-            prioridad: "Automatización", // 🤖 FUNDAMENTOS PRÁCTICOS
+            prioridad: "Automatización", // 🤖 NIVEL 2
             expandible: true,
             subcursos: [
                 {
@@ -105,69 +105,57 @@ window.TrainingPlan.registerComponent({
             ]
         },
 
-        // === ESPECIALIZACIÓN (SKILLS AVANZADOS) ===
+        // === ROBOT FRAMEWORK ACADEMY (MOVIDO DESDE QA MANUAL) ===
         {
-            fuente: "Siesa Business",
-            curso: "Robot Framework Academy - 251 Lecciones Prácticas",
-            acceso: "En Construcción - Siesa Business",
-            tiempo: "120+ horas",
-            prioridad: "Especialización", // ⚡ AVANZADO SIESA
+            fuente: "Robot Framework",
+            curso: "🤖 Robot Framework Academy - 251 Lecciones Prácticas",
+            acceso: "courses/robot-framework-academy/index.html",
+            tiempo: "40+ horas",
+            prioridad: "Automatización", // 🤖 NIVEL 2 - RECLASIFICADO
             expandible: true,
             subcursos: [
                 {
-                    nombre: "🚧 Módulo 1: Fundamentos de Robot Framework (En desarrollo)",
-                    enlace: "#"
+                    nombre: "🏁 Getting Started with Robot Framework",
+                    enlace: "courses/robot-framework-academy/index.html"
                 },
                 {
-                    nombre: "🚧 Módulo 2: Selenium WebDriver Avanzado (En desarrollo)",
-                    enlace: "#"
+                    nombre: "🐍 Python for Robot Framework",
+                    enlace: "courses/robot-framework-academy/index.html"
                 },
                 {
-                    nombre: "🚧 Módulo 3: API Testing con Robot Framework (En desarrollo)",
-                    enlace: "#"
+                    nombre: "🌐 Web Testing with Robot Framework",
+                    enlace: "courses/robot-framework-academy/index.html"
                 },
                 {
-                    nombre: "🚧 Módulo 4: Mobile Testing Automation (En desarrollo)",
-                    enlace: "#"
+                    nombre: "📱 Mobile Testing with Robot Framework",
+                    enlace: "courses/robot-framework-academy/index.html"
                 },
                 {
-                    nombre: "🚧 Módulo 5: Database Testing (En desarrollo)",
-                    enlace: "#"
+                    nombre: "🔧 API Testing with Robot Framework",
+                    enlace: "courses/robot-framework-academy/index.html"
                 },
                 {
-                    nombre: "🚧 Módulo 6: CI/CD Integration (En desarrollo)",
-                    enlace: "#"
+                    nombre: "📊 Data-Driven Testing",
+                    enlace: "courses/robot-framework-academy/index.html"
                 },
                 {
-                    nombre: "🚧 Módulo 7: Performance Testing (En desarrollo)",
-                    enlace: "#"
+                    nombre: "🏗️ Creating Custom Keywords",
+                    enlace: "courses/robot-framework-academy/index.html"
                 },
                 {
-                    nombre: "🚧 Módulo 8: Security Testing (En desarrollo)",
-                    enlace: "#"
-                },
-                {
-                    nombre: "🚧 Módulo 9: Advanced Reporting (En desarrollo)",
-                    enlace: "#"
-                },
-                {
-                    nombre: "🚧 Módulo 10: Best Practices & Patterns (En desarrollo)",
-                    enlace: "#"
-                },
-                {
-                    nombre: "📊 Estado: 251 lecciones planificadas",
-                    enlace: "#"
+                    nombre: "🔧 Advanced Robot Framework Techniques",
+                    enlace: "courses/robot-framework-academy/index.html"
                 }
             ]
         },
 
-        // === VANGUARDIA (TÉCNICAS AVANZADAS) ===
+        // === ESPECIALIZACIÓN (HERRAMIENTAS ESPECÍFICAS) ===
         {
             fuente: "Youtube",
-            curso: "Tutorial Robot Framework - XPath & CSS Selectors",
+            curso: "🎯 Tutorial Robot Framework - XPath & CSS Selectors",
             acceso: "https://www.youtube.com/watch?v=5LV4z_-91WY&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=25",
             tiempo: "4+ horas",
-            prioridad: "Vanguardia", // 🚀 TÉCNICAS AVANZADAS
+            prioridad: "Especialización", // ⚡ NIVEL 3
             expandible: true,
             subcursos: [
                 {
@@ -186,10 +174,10 @@ window.TrainingPlan.registerComponent({
         },
         {
             fuente: "Youtube",
-            curso: "Tutorial Robot Framework - Manish Verma (Avanzado)",
+            curso: "🚀 Tutorial Robot Framework - Manish Verma (Avanzado)",
             acceso: "https://www.youtube.com/watch?v=dLhZuf0RKqQ&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=44",
             tiempo: "6+ horas",
-            prioridad: "Vanguardia", // 🚀 TÉCNICAS EXPERTAS
+            prioridad: "Especialización", // ⚡ NIVEL 3
             expandible: true,
             subcursos: [
                 {
@@ -206,21 +194,23 @@ window.TrainingPlan.registerComponent({
                 }
             ]
         },
+
+        // === VANGUARDIA (TÉCNICAS AVANZADAS) ===
         {
             fuente: "Youtube",
-            curso: "Selenium CSS Selector Tutorial - Completo",
+            curso: "🎨 Selenium CSS Selector Tutorial - Completo",
             acceso: "https://www.youtube.com/watch?v=xDBkWKsntdk&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=62",
             tiempo: "1h 15m",
-            prioridad: "Vanguardia" // 🚀 ESPECIALIZACIÓN TÉCNICA
+            prioridad: "Vanguardia" // 🚀 NIVEL 4
         },
         {
             fuente: "Youtube",
-            curso: "Selenium XPath Tutorial - Completo",
+            curso: "🎨 Selenium XPath Tutorial - Completo",
             acceso: "https://www.youtube.com/watch?v=U0WMFjnbb4I&list=PLL34mf651faORDOyJrk0E6k9FM-wKgfPV&index=63",
             tiempo: "1h 30m",
-            prioridad: "Vanguardia" // 🚀 ESPECIALIZACIÓN TÉCNICA
+            prioridad: "Vanguardia" // 🚀 NIVEL 4
         }
     ]
 });
 
-console.log('✅ Componente QA Automatizado con prioridades cargado - 9 cursos clasificados');
+console.log('✅ Componente QA Automatizado con prioridades cargado - 10 cursos clasificados');
