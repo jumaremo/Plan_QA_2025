@@ -13,7 +13,7 @@ window.TrainingPlan.registerComponent({
         {
             fuente: "Roadmap QA",
             curso: "🤖 Demo 1: Robotframework-GenAI Multi-Proveedor",
-            acceso: "Disponible v1.2+ - Sistema completo",
+            acceso: "https://gitlab.siesadev.com/conversion/calidad/11_iniciativas_en_curso/-/blob/master/Generative%20AI%20in%20Robot%20Framework/Readme_Multiprovedor_Completo_V1.2_Demo_1.md?ref_type=heads",
             tiempo: "Por definir",
             prioridad: "Vanguardia", // 🚀 INNOVACIÓN IA
             expandible: true,
@@ -47,7 +47,7 @@ window.TrainingPlan.registerComponent({
         {
             fuente: "Roadmap QA",
             curso: "🤖 Demo 2: Grabador Inteligente + Autocuración",
-            acceso: "Q1-Q2 2025 - Desarrollo interno",
+            acceso: "https://gitlab.siesadev.com/conversion/calidad/11_iniciativas_en_curso/-/blob/master/Generative%20AI%20in%20Robot%20Framework/Readme_Optimus_Prime_QA_Demo_2.md?ref_type=heads",
             tiempo: "Por definir",
             prioridad: "Vanguardia", // 🚀 IA AUTOCURACIÓN
             expandible: true,
@@ -73,78 +73,78 @@ window.TrainingPlan.registerComponent({
         {
             fuente: "Roadmap QA",
             curso: "📊 Demo 3: Análisis Avanzado + Dashboard",
-            acceso: "Q3-Q4 2025 - Desarrollo interno",
+            acceso: "courses/qa-demos/demo-3/index.html",
             tiempo: "Por definir",
             prioridad: "Vanguardia", // 🚀 ANALYTICS IA
             expandible: true,
             subcursos: [
                 {
                     nombre: "☁️ AWS AI - Análisis Predictivo (Prioridad)",
-                    enlace: "Demo3-AWS.zip"
+                    enlace: "courses/qa-demos/demo-3/index.html"
                 },
                 {
                     nombre: "🌟 Gemini AI - Patrones de Fallo",
-                    enlace: "Demo3-Gemini.zip"
+                    enlace: "courses/qa-demos/demo-3/index.html"
                 },
                 {
                     nombre: "🤖 Claude AI - Dashboard Ejecutivo",
-                    enlace: "Demo3-Claude.zip"
+                    enlace: "courses/qa-demos/demo-3/index.html"
                 },
                 {
                     nombre: "🔗 Multi-AI - Orquestador de Análisis",
-                    enlace: "Demo3-MultiAI.zip"
+                    enlace: "courses/qa-demos/demo-3/index.html"
                 }
             ]
         },
         {
             fuente: "Roadmap QA",
             curso: "🔄 Demo 4: Agente IA de Replicación",
-            acceso: "Q3-Q4 2025 - Desarrollo interno",
+            acceso: "courses/qa-demos/demo-4/index.html",
             tiempo: "Por definir",
             prioridad: "Vanguardia", // 🚀 AGENTES IA
             expandible: true,
             subcursos: [
                 {
                     nombre: "🔗 Multi-AI - Agente Replicación (Prioridad)",
-                    enlace: "Demo4-MultiAI.zip"
+                    enlace: "courses/qa-demos/demo-4/index.html"
                 },
                 {
                     nombre: "🤖 Claude AI - API Conversacional",
-                    enlace: "Demo4-Claude.zip"
+                    enlace: "courses/qa-demos/demo-4/index.html"
                 },
                 {
                     nombre: "🌟 Gemini AI - Generación de Casos",
-                    enlace: "Demo4-Gemini.zip"
+                    enlace: "courses/qa-demos/demo-4/index.html"
                 },
                 {
                     nombre: "☁️ AWS AI - Base de Conocimiento",
-                    enlace: "Demo4-AWS.zip"
+                    enlace: "courses/qa-demos/demo-4/index.html"
                 }
             ]
         },
         {
             fuente: "Roadmap QA",
             curso: "🌐 Demo 5: Sistema Universal",
-            acceso: "2026 - Desarrollo interno",
+            acceso: "courses/qa-demos/demo-5/index.html",
             tiempo: "Por definir",
             prioridad: "Vanguardia", // 🚀 TESTING UNIVERSAL
             expandible: true,
             subcursos: [
                 {
                     nombre: "🔗 Multi-AI - Orquestador Universal (Prioridad)",
-                    enlace: "Demo5-MultiAI.zip"
+                    enlace: "courses/qa-demos/demo-5/index.html"
                 },
                 {
                     nombre: "🌟 Gemini AI - Cobertura Web/Móvil",
-                    enlace: "Demo5-Gemini.zip"
+                    enlace: "courses/qa-demos/demo-5/index.html"
                 },
                 {
                     nombre: "🤖 Claude AI - Testing Escritorio",
-                    enlace: "Demo5-Claude.zip"
+                    enlace: "courses/qa-demos/demo-5/index.html"
                 },
                 {
                     nombre: "☁️ AWS AI - APIs y Microservicios",
-                    enlace: "Demo5-AWS.zip"
+                    enlace: "courses/qa-demos/demo-5/index.html"
                 }
             ]
         },
@@ -153,82 +153,82 @@ window.TrainingPlan.registerComponent({
         {
             fuente: "Roadmap QA",
             curso: "🧪 Demo 6: Laboratorio de IA para QA",
-            acceso: "2026+ - Investigación y desarrollo",
+            acceso: "courses/qa-demos/demo-6/index.html",
             tiempo: "Por definir",
             prioridad: "Vanguardia", // 🚀 LABORATORIO IA
             expandible: true,
             subcursos: [
                 {
                     nombre: "📊 Generación de Datos Sintéticos",
-                    enlace: "Creación masiva de datos de prueba realistas"
+                    enlace: "courses/qa-demos/demo-6/index.html"
                 },
                 {
                     nombre: "⚡ Pruebas de Rendimiento Inteligentes",
-                    enlace: "Predicción de cuellos de botella"
+                    enlace: "courses/qa-demos/demo-6/index.html"
                 },
                 {
                     nombre: "♿ Testing de Accesibilidad Automatizado",
-                    enlace: "Validación WCAG con IA"
+                    enlace: "courses/qa-demos/demo-6/index.html"
                 },
                 {
                     nombre: "👥 Pruebas de Usabilidad",
-                    enlace: "Simulación de comportamiento de usuario real"
+                    enlace: "courses/qa-demos/demo-6/index.html"
                 },
                 {
                     nombre: "🔒 Testing de Seguridad",
-                    enlace: "Detección automática de vulnerabilidades"
+                    enlace: "courses/qa-demos/demo-6/index.html"
                 }
             ]
         },
         {
             fuente: "Roadmap QA",
             curso: "🔄 Demo 7: Integración CI/CD Inteligente",
-            acceso: "2026+ - Investigación y desarrollo",
+            acceso: "courses/qa-demos/demo-7/index.html",
             tiempo: "Por definir",
             prioridad: "Vanguardia", // 🚀 DEVOPS IA
             expandible: true,
             subcursos: [
                 {
                     nombre: "🔧 Pipeline Adaptativo",
-                    enlace: "Ajuste automático de estrategia de testing"
+                    enlace: "courses/qa-demos/demo-7/index.html"
                 },
                 {
                     nombre: "📈 Análisis de Impacto",
-                    enlace: "Predicción de áreas afectadas por cambios"
+                    enlace: "courses/qa-demos/demo-7/index.html"
                 },
                 {
                     nombre: "⚡ Testing Paralelo Optimizado",
-                    enlace: "Distribución inteligente de pruebas"
+                    enlace: "courses/qa-demos/demo-7/index.html"
                 },
                 {
                     nombre: "📊 Reportes en Tiempo Real",
-                    enlace: "Notificaciones proactivas de problemas"
+                    enlace: "courses/qa-demos/demo-7/index.html"
                 }
             ]
         },
         {
             fuente: "Roadmap QA",
             curso: "📱 Demo 8: Testing Cross-Platform Unificado",
-            acceso: "2026+ - Investigación y desarrollo",
+            acceso: "courses/qa-demos/demo-8/index.html",
             tiempo: "Por definir",
             prioridad: "Vanguardia", // 🚀 CROSS-PLATFORM
             expandible: true,
             subcursos: [
                 {
                     nombre: "🔄 Sincronización Multi-Dispositivo",
-                    enlace: "Pruebas coordinadas en múltiples plataformas"
+                    enlace: "courses/qa-demos/demo-8/index.html"
                 },
                 {
                     nombre: "✅ Validación de Consistencia",
-                    enlace: "Verificación de experiencia uniforme"
+                    enlace: "courses/qa-demos/demo-8/index.html"
                 },
                 {
                     nombre: "🔗 Testing de APIs Inteligente",
-                    enlace: "Validación automática de contratos"
+                    enlace: "courses/qa-demos/demo-8/index.html"
                 },
                 {
                     nombre: "🌐 Pruebas de Integración Complejas",
-                    enlace: "Validación de ecosistemas completos"
+                    enlace: "courses/qa-demos/demo-8/index.html"
                 }
             ]
         }

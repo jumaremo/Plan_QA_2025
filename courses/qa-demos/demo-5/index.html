@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo QA IA - En Construcción | Plan QA 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: 20px;
+        }
+
+        .demo-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: aiPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes aiPulse {
+            0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+            25% { transform: scale(1.1) rotate(5deg); opacity: 0.8; }
+            50% { transform: scale(1) rotate(0deg); opacity: 1; }
+            75% { transform: scale(1.05) rotate(-3deg); opacity: 0.9; }
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #f57c00;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .demo-badge {
+            background: linear-gradient(135deg, #ff9800, #f57c00);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+
+        .message {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .roadmap-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .roadmap-section h4 {
+            color: #f57c00;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .progress-bar {
+            background: #e9ecef;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #ff9800, #f57c00);
+            height: 100%;
+            width: 25%;
+            border-radius: 5px;
+            animation: loading 4s ease-in-out infinite;
+        }
+
+        @keyframes loading {
+            0%, 100% { width: 25%; }
+            50% { width: 35%; }
+        }
+
+        .progress-details {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .features-list li {
+            padding: 8px 0;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+
+        .features-list li::before {
+            content: '🚀 ';
+            margin-right: 10px;
+        }
+
+        .status {
+            color: #f57c00;
+            font-weight: 600;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .back-btn, .roadmap-btn {
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .roadmap-btn {
+            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+        }
+
+        .roadmap-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+        }
+
+        .innovation-info {
+            background: rgba(255, 152, 0, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 25px;
+            border-left: 4px solid #ff9800;
+            text-align: left;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .email-link {
+            color: #f57c00;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .demo-badge {
+                font-size: 1rem;
+                padding: 12px 20px;
+            }
+            
+            .buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .back-btn, .roadmap-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="demo-icon">🎯</div>
+        <h1 id="demoTitle">Demo QA con IA</h1>
+        <div class="subtitle">Innovación en Construcción</div>
+        
+        <div class="demo-badge" id="demoBadge">
+            🚀 Demo en Desarrollo
+        </div>
+        
+        <div class="message">
+            <p>Esta demo forma parte del <strong>roadmap de innovación QA 2025-2026</strong> con Inteligencia Artificial.</p>
+            <p>Estamos desarrollando soluciones revolucionarias que transformarán la manera de hacer testing.</p>
+        </div>
+
+        <div class="roadmap-section">
+            <h4>🛣️ Estado del Desarrollo</h4>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="progress-details">
+                <span>📊 En planificación</span>
+                <span id="progressPercent">25% completado</span>
+            </div>
+            
+            <ul class="features-list" id="featuresList">
+                <li>Análisis de requerimientos técnicos</li>
+                <li>Diseño de arquitectura con IA</li>
+                <li>Prototipado de funcionalidades core</li>
+                <li>Integración con Robot Framework</li>
+                <li>Testing y validación interna</li>
+            </ul>
+        </div>
+        
+        <div class="status" id="statusText">Estado: Fase de investigación y desarrollo</div>
+
+        <div class="buttons">
+            <a href="../../../index.html" class="back-btn">← Volver al Plan Principal</a>
+            <a href="https://gitlab.siesadev.com/conversion/calidad/11_iniciativas_en_curso" class="roadmap-btn" target="_blank">🎯 Ver Roadmap QA</a>
+        </div>
+
+        <div class="innovation-info">
+            <h4 style="color: #f57c00; margin-bottom: 15px;">🧠 Innovación QA con IA</h4>
+            <p style="margin-bottom: 15px; font-size: 0.95rem; line-height: 1.4;">
+                Nuestro equipo está desarrollando demos revolucionarias que integran múltiples proveedores de IA 
+                (Claude, Gemini, AWS Bedrock) con Robot Framework para crear la <strong>próxima generación de herramientas QA</strong>.
+            </p>
+            <p style="margin: 0; font-size: 0.9rem; color: #6c757d;">
+                <strong>🎯 Objetivo:</strong> Democratizar el testing inteligente y hacer que la automatización sea accesible para todos los niveles de experticia.
+            </p>
+        </div>
+
+        <div class="contact-info">
+            <p>📧 Información del proyecto: <a href="mailto:jmreinam@siesa.com" class="email-link">jmreinam@siesa.com</a></p>
+            <p>📅 Roadmap completo: <strong>2025-2026</strong></p>
+        </div>
+    </div>
+
+    <script>
+        // Configuración específica por demo
+        const demoConfigs = {
+            'demo-3': {
+                title: '📊 Demo 3: Análisis Avanzado + Dashboard',
+                badge: '📊 Analytics IA',
+                status: 'Q3-Q4 2025 - Desarrollo interno',
+                progress: 25,
+                features: [
+                    'Análisis predictivo con AWS AI',
+                    'Detección de patrones de fallo',
+                    'Dashboard ejecutivo inteligente',
+                    'Orquestador multi-AI de análisis',
+                    'Alertas proactivas automatizadas'
+                ]
+            },
+            'demo-4': {
+                title: '🔄 Demo 4: Agente IA de Replicación',
+                badge: '🤖 Agentes IA',
+                status: 'Q3-Q4 2025 - Desarrollo interno',
+                progress: 20,
+                features: [
+                    'Agente multi-AI de replicación',
+                    'API conversacional con Claude',
+                    'Generación automática de casos',
+                    'Base de conocimiento inteligente',
+                    'Replicación adaptativa de scenarios'
+                ]
+            },
+            'demo-5': {
+                title: '🌐 Demo 5: Sistema Universal',
+                badge: '🌐 Testing Universal',
+                status: '2026 - Desarrollo interno',
+                progress: 15,
+                features: [
+                    'Orquestador universal multi-AI',
+                    'Cobertura web y móvil unificada',
+                    'Testing de aplicaciones escritorio',
+                    'Validación de APIs y microservicios',
+                    'Ecosistema completo de testing'
+                ]
+            },
+            'demo-6': {
+                title: '🧪 Demo 6: Laboratorio de IA para QA',
+                badge: '🧪 Laboratorio IA',
+                status: '2026+ - Investigación y desarrollo',
+                progress: 10,
+                features: [
+                    'Generación de datos sintéticos',
+                    'Pruebas de rendimiento inteligentes',
+                    'Testing de accesibilidad automatizado',
+                    'Simulación de comportamiento de usuario',
+                    'Detección automática de vulnerabilidades'
+                ]
+            },
+            'demo-7': {
+                title: '🔄 Demo 7: Integración CI/CD Inteligente',
+                badge: '🔄 DevOps IA',
+                status: '2026+ - Investigación y desarrollo',
+                progress: 10,
+                features: [
+                    'Pipeline adaptativo inteligente',
+                    'Análisis de impacto predictivo',
+                    'Testing paralelo optimizado',
+                    'Reportes en tiempo real',
+                    'Integración continua con IA'
+                ]
+            },
+            'demo-8': {
+                title: '📱 Demo 8: Testing Cross-Platform Unificado',
+                badge: '📱 Cross-Platform',
+                status: '2026+ - Investigación y desarrollo',
+                progress: 5,
+                features: [
+                    'Sincronización multi-dispositivo',
+                    'Validación de consistencia UI/UX',
+                    'Testing de APIs inteligente',
+                    'Pruebas de integración complejas',
+                    'Validación de ecosistemas completos'
+                ]
+            }
+        };
+
+        // Detectar qué demo es basándose en la URL
+        const currentPath = window.location.pathname;
+        const demoMatch = currentPath.match(/demo-(\d+)/);
+        const demoKey = demoMatch ? `demo-${demoMatch[1]}` : 'demo-3';
+        
+        const config = demoConfigs[demoKey] || demoConfigs['demo-3'];
+
+        // Actualizar contenido
+        document.getElementById('demoTitle').textContent = config.title;
+        document.getElementById('demoBadge').textContent = config.badge;
+        document.getElementById('statusText').textContent = `Estado: ${config.status}`;
+        document.getElementById('progressPercent').textContent = `${config.progress}% completado`;
+
+        // Actualizar lista de características
+        const featuresList = document.getElementById('featuresList');
+        featuresList.innerHTML = config.features.map(feature => `<li>${feature}</li>`).join('');
+
+        // Actualizar progreso
+        const progressFill = document.querySelector('.progress-fill');
+        progressFill.style.width = `${config.progress}%`;
+
+        // Animación de progreso
+        document.addEventListener('DOMContentLoaded', function() {
+            let currentWidth = config.progress;
+            const maxWidth = config.progress + 10;
+            
+            setInterval(() => {
+                currentWidth = currentWidth >= maxWidth ? config.progress : currentWidth + 0.2;
+                progressFill.style.width = currentWidth + '%';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
