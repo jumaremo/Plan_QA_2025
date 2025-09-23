@@ -109,14 +109,14 @@ window.TrainingPlan.registerComponent({
         {
             fuente: "Robot Framework",
             curso: "🤖 Robot Framework Academy - 251 Lecciones Prácticas",
-            acceso: "courses/robot-framework-academy/index.html",
+            acceso: "https://robotframework-training-academy.netlify.app/",
             tiempo: "40+ horas",
             prioridad: "Automatización", // 🤖 NIVEL 2 - RECLASIFICADO
             expandible: true,
             subcursos: [
                 {
                     nombre: "🏁 Getting Started with Robot Framework",
-                    enlace: "courses/robot-framework-academy/index.html"
+                    enlace: "https://robotframework-training-academy.netlify.app/"
                 },
                 {
                     nombre: "🐍 Python for Robot Framework",
